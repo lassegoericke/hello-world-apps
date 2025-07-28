@@ -10,3 +10,4 @@ RUN rm -rf /bin/sh && rm -rf /usr/bin/bash
 COPY --from=0 /main /home/appuser/app
 USER appuser
 CMD ["/home/appuser/app"]
+EXPOSE 8080
